@@ -1,29 +1,115 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import { Auth } from 'aws-amplify'
+import store from '@/store'
+
+const TheContainer = () => import('@/containers/TheContainer')
+
+const Dashboard = () => import('@/views/Dashboard')
+const Moorings = () => import('@/views/Moorings')
+const MooringsCreate = () => import('@/views/MooringsCreate')
+const Login = () => import('@/views/Login')
+const ForgotPassword = () => import('@/views/ForgotPassword')
+const Forum = () => import('@/views/Forum')
+const Register = () => import('@/views/Register')
 
 Vue.use(VueRouter)
 
-const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+const routes = [{
+      path: '/',
+      redirect: '/dashboard',
+      name: 'Home',
+      component: TheContainer,
+      children: [
+        {
+          path: 'dashboard',
+          name: 'Dashboard',
+          component: Dashboard
+        },
+        {
+          path: 'moorings',
+          name: 'Moorings',
+          component: Moorings
+        },
+        {
+          path: 'moorings/create',
+          name: 'MooringsCreate',
+          component: MooringsCreate
+        },
+        {
+          path: 'moorings/edit',
+          name: 'MooringsEdit',
+          component: MooringsCreate
+        },
+        {
+          path: 'forum',
+          name: 'Forum',
+          component: Forum
+        },
+      ]
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login,
+    },
+    {
+      path: '/password',
+      name: 'ForgotPassword',
+      component: ForgotPassword,
+    },
+    {
+      path: '/register',
+      name: 'Register',
+      component: Register,
+    }
+  ]
+
+  const router = new VueRouter ({
+    routes
+  })
+
+  const isAuth = async () => {
+    Auth.currentSession()
+    .then(data => {
+      if (from.name == null) {
+        this.$store.state.username=data.idToken.payload['cognito:username']
+      }
+      return true
+    })
+    .catch(() => {
+      return false
+      })
   }
-]
 
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
-})
+  router.beforeEach(async(to, from, next) => {
+      console.log('HEREEEEE')
+      Auth.currentSession()
+      .then(data => {
+        console.log(data)
+        let username = data.idToken.payload['cognito:username']
+        let group = data.idToken.payload['cognito:groups'] ?
+        data.idToken.payload['cognito:groups'][0] : 'USER'
+        console.log(username)
+        if (!from.name) {
+          store.commit('setGroup', group)
+          store.commit('setUsername', username)
+          console.log('NOT')
+          if (to.name !== 'Dashboard') {
+            router.push({name: 'Dashboard'}).catch(() => {})
+          }
+        } 
+        next()
+      })
+      .catch(() => {
+        console.log("CATCH")
+        if (to.name !== 'Login' && to.name !== 'ForgotPassword' && to.name !== 'Register') {
+          router.push({name: 'Login'}).catch(() => {})
+          return;
+        }
+      })
 
-export default router
+      next()
+  });
+
+  export default router
