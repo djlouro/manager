@@ -38,7 +38,7 @@
       </CCol>
     </CRow>
     <CRow>
-      <CCol col="6">
+      <CCol lg="6">
           <CCard>
             <CCardHeader>
               Mooring map
@@ -54,16 +54,16 @@
                 v-for="(m, index) in mooringList"
                 :position="m.position"
                 :title="m.code"
-                x
                 :clickable="false"
                 :draggable="m.draggable"
                 :icon="{ url: 'https://icons.iconarchive.com/icons/iconsmind/outline/24/Ship-2-icon.png'}"
+                style="background-color: red;"
               />
             </GmapMap>
             </CCardBody>
           </CCard>
       </CCol>
-      <CCol COL=6>
+      <CCol lg=6>
           <CCard>
             <CCardHeader>Mooring List</CCardHeader>
             <CCardBody>
@@ -160,6 +160,10 @@ export default {
     },
   },
   methods: {
+    onMarkerClick(e,a) {
+        console.log(e)
+        console.log(a)
+    },  
     setData() {
       if (this.group !== 'ADMIN') {
         this.getMooringsInfo()

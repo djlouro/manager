@@ -13,7 +13,13 @@
         "lng": 13.724123
       },
       "condition": "avalible",
-      "client": "ljevnikar1"
+      "client": "ljevnikar1",
+      "username": "tomo123",
+      "fullName": "lovro jevnikar",
+      "street": "ulica",
+      "zip": "1000",
+      "town": "Ljubljana",
+      "country": "SLO"
     },
     {
       "id": 2,
@@ -21,13 +27,13 @@
       "width": "15m",
       "length": "25m",
       "watherDepth": "70m",
-      "type": "wet",
+      "type": "Wather",
       "price": "1300",
       "position": {
         "lat": 45.547724,
         "lng": 13.72419
       },
-      "condition": "taken"
+      "condition": "repair"
     },
     {
       "id": 3,
@@ -956,6 +962,22 @@
           "commentBody": "Elan"
         }
       ]
+    },
+    {
+      "topicTitle": "HEY guys",
+      "topicBody": "how are you doing",
+      "topicOwner": "ljevnikar",
+      "topicComments": [
+        {
+          "commentOwner": "ljevnikar",
+          "commentBody": "ok"
+        },
+        {
+          "commentOwner": "admin4",
+          "commentBody": "ok"
+        }
+      ],
+      "id": 2
     }
   ],
   "problems": [
@@ -979,7 +1001,12 @@
       "topicTitle": "I NEED NEW ROPE!",
       "topicBody": "My old ropes are torn!",
       "topicOwner": "ljevnikar",
-      "topicComments": [],
+      "topicComments": [
+        {
+          "commentOwner": "ljevnikar",
+          "commentBody": "OK"
+        }
+      ],
       "id": 2
     }
   ]

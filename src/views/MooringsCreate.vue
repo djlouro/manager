@@ -41,7 +41,7 @@
                     </CCol>
                     <CCol md="9">
                         <CSelect
-                          v-model="mooring.type"
+                          :value.sync="mooring.type"
                           :options="['Wather','Land']"
                         >
                         </CSelect>
@@ -61,7 +61,7 @@
                     </CCol>
                     <CCol md="9">
                         <CSelect
-                          v-model="mooring.condition"
+                          :value.sync="mooring.condition"
                           :options="['avalible','taken','repair']"
                         >
                         </CSelect>
@@ -109,7 +109,7 @@
                         Full name
                     </CCol>
                     <CCol md="9">
-                        <CInput placeholder="Name and surname">></CInput>
+                        <CInput v-model="mooring.fullName" placeholder="Name and surname">></CInput>
                     </CCol>
                 </CRow>
                 <CRow align-vertical="center" class="mb-2">
@@ -117,7 +117,7 @@
                         Street
                     </CCol>
                     <CCol md="9">
-                        <CInput placeholder="Street">></CInput>
+                        <CInput v-model="mooring.street" placeholder="Street">></CInput>
                     </CCol>
                 </CRow>
                 <CRow align-vertical="center" class="mb-2">
@@ -125,10 +125,10 @@
                         Address
                     </CCol>
                     <CCol md="4">
-                        <CInput placeholder="ZIP"></CInput>
+                        <CInput v-model="mooring.zip" placeholder="ZIP"></CInput>
                     </CCol>
                     <CCol md="5">
-                        <CInput placeholder="Town">></CInput>
+                        <CInput v-model="mooring.town" placeholder="Town">></CInput>
                     </CCol>
                 </CRow>
                 <CRow align-vertical="center" class="mb-2">
@@ -136,7 +136,7 @@
                         Country
                     </CCol>
                     <CCol md="9">
-                        <CInput placeholder="Country">></CInput>
+                        <CInput v-model="mooring.country" placeholder="Country">></CInput>
                     </CCol>
                 </CRow>
                 <CRow align-vertical="center" class="mb-2">
@@ -144,7 +144,7 @@
                         Boat type
                     </CCol>
                     <CCol md="9">
-                        <CInput placeholder="Boat type"></CInput>
+                        <CInput v-model="mooring.boatType" placeholder="Boat type"></CInput>
                     </CCol>
                 </CRow>
                 <CRow align-vertical="center" class="mb-2">
@@ -152,10 +152,10 @@
                         Boat dimensions
                     </CCol>
                     <CCol md="4">
-                        <CInput placeholder="Length"></CInput>
+                        <CInput v-model="mooring.boatLength" placeholder="Length"></CInput>
                     </CCol>
                     <CCol md="5">
-                        <CInput placeholder="Width">></CInput>
+                        <CInput v-model="mooring.boatWidth" placeholder="Width">></CInput>
                     </CCol>
                 </CRow>
             </CCardBody>

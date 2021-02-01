@@ -33,7 +33,9 @@
               </template>
               <template #price="{item}">
                 <td>
-                  {{item.price}}€
+                  <div v-if="item.price">
+                    {{item.price}}€
+                  </div>
                 </td>
               </template>
               <template #edit="{item}">

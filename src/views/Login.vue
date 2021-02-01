@@ -11,6 +11,7 @@
                                 <CForm>
                                      <CInput v-model="username"
                                             placeholder="Username"
+                                            :disabled="completeNewPassword"
                                             @input="onInput()">
                                         <template #prepend-content>
                                             <CIcon name="cil-user"/>
@@ -19,6 +20,7 @@
                                     <CInput v-model="password"
                                             type="password"
                                             placeholder="Password"
+                                            :disabled="completeNewPassword"
                                             @input="onInput()">
                                         <template #prepend-content>
                                             <CIcon name="cil-lock-locked"/>
@@ -50,10 +52,16 @@
                                     </span>
                                     <CRow>
                                         <CCol v-if="!completeNewPassword" col="6" class="text-left">
-                                            <CButton color="primary" class="px-4" @click="signIn()">Login</CButton>
+                                            <CButton color="primary" class="px-4" @click="signIn()">
+                                                Login
+                                                <CSpinner v-if="isLoading" size="sm"></CSpinner>
+                                            </CButton>
                                         </CCol>
                                         <CCol v-if="completeNewPassword" col="6" class="text-left">
-                                            <CButton color="primary" class="px-4" @click="signInNewPassword()">Save new passowrd</CButton>
+                                            <CButton color="primary" class="px-4" @click="signInNewPassword()">
+                                                Save new passowrd
+                                                <CSpinner v-if="isLoading" size="sm"></CSpinner>    
+                                            </CButton>
                                         </CCol>
                                         <CCol col="6" class="text-right">
                                             <CButton color="link" class="px-0" to="/password">Forgot password?</CButton>
@@ -78,6 +86,7 @@ export default {
   name: 'Login',
   data () {
     return {
+        isLoading: false,
         completeNewPassword: false,
         errorMsg: '',
         user: null,
@@ -92,8 +101,10 @@ export default {
   },
   methods: {
       signIn() {
+          this.isLoading = true
           Auth.signIn(this.username, this.password)
           .then(data => {
+               this.isLoading = false
               if (data.challengeName === "NEW_PASSWORD_REQUIRED") {
                   this.user = data
                   this.completeNewPassword = true
@@ -106,11 +117,24 @@ export default {
               }
           })
           .catch(err => {
-              this.errorMsg = err
+               this.isLoading = false
+              this.errorMsg = err.message
           })
       },
       signInNewPassword() {
-        Auth.completeNewPassword(this.user, this.newPassword)
+          this.isLoading = true
+            Auth.completeNewPassword(this.user, this.newPassword)
+            .then(data => {
+                this.isLoading = false
+                this.$store.state.username=data.username
+                this.$store.state.userGroup= data.signInUserSession.idToken.payload['cognito:groups'] ?
+                data.signInUserSession.idToken.payload['cognito:groups'][0] : 'USER'
+                this.$router.push({name: 'Dashboard'})
+            })
+            .catch(err => {
+               this.isLoading = false
+              this.errorMsg = err.message
+          })
       },
       onInput() {
 
