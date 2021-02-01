@@ -1,0 +1,986 @@
+{
+  "moorings": [
+    {
+      "id": 1,
+      "code": "AB-110",
+      "width": "15m",
+      "length": "25m",
+      "watherDepth": "70m",
+      "type": "wet",
+      "price": "1300",
+      "position": {
+        "lat": 45.547715,
+        "lng": 13.724123
+      },
+      "condition": "avalible",
+      "client": "ljevnikar1"
+    },
+    {
+      "id": 2,
+      "code": "AF-112",
+      "width": "15m",
+      "length": "25m",
+      "watherDepth": "70m",
+      "type": "wet",
+      "price": "1300",
+      "position": {
+        "lat": 45.547724,
+        "lng": 13.72419
+      },
+      "condition": "taken"
+    },
+    {
+      "id": 3,
+      "code": "AB-114",
+      "width": "15m",
+      "length": "25m",
+      "watherDepth": "70m",
+      "type": "wet",
+      "price": "1300",
+      "position": {
+        "lat": 45.5476881,
+        "lng": 13.724498
+      },
+      "condition": "taken"
+    },
+    {
+      "id": 4,
+      "code": "AF-115",
+      "width": "15m",
+      "length": "25m",
+      "watherDepth": "70m",
+      "type": "wet",
+      "price": "1300",
+      "position": {
+        "lat": 45.547741,
+        "lng": 13.724302
+      },
+      "condition": "avalible"
+    },
+    {
+      "id": 5,
+      "code": "AB-116",
+      "width": "15m",
+      "length": "25m",
+      "watherDepth": "70m",
+      "type": "wet",
+      "price": "1300",
+      "position": {
+        "lat": 45.547741,
+        "lng": 13.724369
+      },
+      "condition": "taken"
+    },
+    {
+      "id": 6,
+      "code": "AF-118",
+      "width": "15m",
+      "length": "25m",
+      "watherDepth": "70m",
+      "type": "wet",
+      "price": "1300",
+      "position": {
+        "lat": 45.547737,
+        "lng": 13.724455
+      },
+      "condition": "taken"
+    },
+    {
+      "id": 7,
+      "code": "AB-120",
+      "width": "15m",
+      "length": "25m",
+      "watherDepth": "70m",
+      "type": "wet",
+      "price": "1300",
+      "position": {
+        "lat": 45.54763,
+        "lng": 13.724154
+      },
+      "condition": "taken"
+    },
+    {
+      "id": 8,
+      "code": "AF-122",
+      "width": "15m",
+      "length": "25m",
+      "watherDepth": "70m",
+      "type": "wet",
+      "price": "1300",
+      "position": {
+        "lat": 45.547636,
+        "lng": 13.724214
+      },
+      "condition": "avalible"
+    },
+    {
+      "id": 9,
+      "code": "AB-124",
+      "width": "15m",
+      "length": "25m",
+      "watherDepth": "70m",
+      "type": "wet",
+      "price": "1300",
+      "position": {
+        "lat": 45.547642,
+        "lng": 13.724281
+      },
+      "condition": "repair"
+    },
+    {
+      "id": 10,
+      "code": "AF-125",
+      "width": "15m",
+      "length": "25m",
+      "watherDepth": "70m",
+      "type": "wet",
+      "price": "1300",
+      "position": {
+        "lat": 45.547646,
+        "lng": 13.724343
+      },
+      "condition": "avalible",
+      "client": "ljevnikar1444"
+    },
+    {
+      "id": 11,
+      "code": "AB-126",
+      "width": "15m",
+      "length": "25m",
+      "watherDepth": "70m",
+      "type": "wet",
+      "price": "1300",
+      "position": {
+        "lat": 45.54765,
+        "lng": 13.724405
+      },
+      "condition": "taken"
+    },
+    {
+      "id": 12,
+      "code": "AF-128",
+      "width": "15m",
+      "length": "25m",
+      "watherDepth": "70m",
+      "type": "wet",
+      "price": "1300",
+      "position": {
+        "lat": 45.547652,
+        "lng": 13.724472
+      },
+      "condition": "taken"
+    },
+    {
+      "id": 13,
+      "code": "GF-300",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "position": {
+        "lat": 45.547312,
+        "lng": 13.724218
+      },
+      "condition": "taken"
+    },
+    {
+      "id": 14,
+      "code": "GF-301",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "position": {
+        "lat": 45.54732,
+        "lng": 13.724285
+      },
+      "condition": "taken"
+    },
+    {
+      "id": 15,
+      "code": "GF-302",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "position": {
+        "lat": 45.547339,
+        "lng": 13.724355
+      },
+      "condition": "taken"
+    },
+    {
+      "id": 16,
+      "code": "GF-303",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "position": {
+        "lat": 45.547352,
+        "lng": 13.724433
+      },
+      "condition": "taken"
+    },
+    {
+      "id": 17,
+      "code": "GF-304",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "position": {
+        "lat": 45.547365,
+        "lng": 13.724487
+      },
+      "condition": "taken"
+    },
+    {
+      "id": 18,
+      "code": "GF-305",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "position": {
+        "lat": 45.547378,
+        "lng": 13.724554
+      },
+      "condition": "taken"
+    },
+    {
+      "id": 19,
+      "code": "GF-306",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "position": {
+        "lat": 45.547393,
+        "lng": 13.724618
+      },
+      "condition": "avalible"
+    },
+    {
+      "id": 20,
+      "code": "GF-307",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "position": {
+        "lat": 45.547395,
+        "lng": 13.724685
+      },
+      "condition": "taken"
+    },
+    {
+      "id": 21,
+      "code": "GF-310",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "position": {
+        "lat": 45.547215,
+        "lng": 13.724242
+      },
+      "condition": "taken"
+    },
+    {
+      "id": 21,
+      "code": "GF-311",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "position": {
+        "lat": 45.54723,
+        "lng": 13.724298
+      },
+      "condition": "taken"
+    },
+    {
+      "id": 23,
+      "code": "GF-312",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "position": {
+        "lat": 45.547243,
+        "lng": 13.724346
+      },
+      "condition": "avalible"
+    },
+    {
+      "id": 24,
+      "code": "GF-313",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "position": {
+        "lat": 45.547262,
+        "lng": 13.724405
+      },
+      "condition": "repair"
+    },
+    {
+      "id": 25,
+      "code": "GF-314",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "position": {
+        "lat": 45.547275,
+        "lng": 13.724469
+      },
+      "condition": "taken"
+    },
+    {
+      "id": 26,
+      "code": "GF-315",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "position": {
+        "lat": 45.547294,
+        "lng": 13.724544
+      },
+      "condition": "taken"
+    },
+    {
+      "id": 27,
+      "code": "GF-316",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "position": {
+        "lat": 45.547311,
+        "lng": 13.724616
+      },
+      "condition": "taken"
+    },
+    {
+      "id": 28,
+      "code": "GF-317",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "position": {
+        "lat": 45.54733,
+        "lng": 13.724672
+      },
+      "condition": "taken"
+    },
+    {
+      "id": 29,
+      "code": "KF-300",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "condition": "repair"
+    },
+    {
+      "id": 30,
+      "code": "KF-301",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "condition": "taken"
+    },
+    {
+      "id": 31,
+      "code": "KF-302",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "condition": "taken"
+    },
+    {
+      "id": 32,
+      "code": "KF-303",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "condition": "avalible"
+    },
+    {
+      "id": 33,
+      "code": "KF-304",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "condition": "taken"
+    },
+    {
+      "id": 34,
+      "code": "KF-305",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "condition": "taken"
+    },
+    {
+      "id": 35,
+      "code": "KF-306",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "condition": "taken"
+    },
+    {
+      "id": 36,
+      "code": "KF-307",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "condition": "repair"
+    },
+    {
+      "id": 37,
+      "code": "KF-310",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "condition": "taken"
+    },
+    {
+      "id": 38,
+      "code": "KF-311",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "condition": "taken"
+    },
+    {
+      "id": 39,
+      "code": "KF-312",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "condition": "taken"
+    },
+    {
+      "id": 40,
+      "code": "KF-313",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "condition": "taken"
+    },
+    {
+      "id": 41,
+      "code": "KF-314",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "condition": "taken"
+    },
+    {
+      "id": 42,
+      "code": "KF-315",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "condition": "taken"
+    },
+    {
+      "id": 43,
+      "code": "KF-316",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "condition": "avalible"
+    },
+    {
+      "id": 44,
+      "code": "KF-317",
+      "width": "12m",
+      "length": "21m",
+      "watherDepth": "60m",
+      "type": "wet",
+      "price": "1000",
+      "condition": "avalible"
+    },
+    {
+      "id": 46,
+      "code": "SM-51",
+      "width": "8m",
+      "length": "15m",
+      "watherDepth": "40m",
+      "type": "wet",
+      "price": "600",
+      "condition": "taken"
+    },
+    {
+      "id": 47,
+      "code": "SM-52",
+      "width": "8m",
+      "length": "15m",
+      "watherDepth": "40m",
+      "type": "wet",
+      "price": "600",
+      "condition": "taken"
+    },
+    {
+      "id": 48,
+      "code": "SM-53",
+      "width": "8m",
+      "length": "15m",
+      "watherDepth": "40m",
+      "type": "wet",
+      "price": "600",
+      "condition": "taken"
+    },
+    {
+      "id": 49,
+      "code": "SM-54",
+      "width": "8m",
+      "length": "15m",
+      "watherDepth": "40m",
+      "type": "wet",
+      "price": "600",
+      "condition": "taken"
+    },
+    {
+      "id": 50,
+      "code": "SM-55",
+      "width": "8m",
+      "length": "15m",
+      "watherDepth": "40m",
+      "type": "wet",
+      "price": "600",
+      "condition": "taken"
+    },
+    {
+      "id": 51,
+      "code": "SM-56",
+      "width": "8m",
+      "length": "15m",
+      "watherDepth": "40m",
+      "type": "wet",
+      "price": "600",
+      "condition": "taken"
+    },
+    {
+      "id": 52,
+      "code": "SM-57",
+      "width": "8m",
+      "length": "15m",
+      "watherDepth": "40m",
+      "type": "wet",
+      "price": "600",
+      "condition": "taken"
+    },
+    {
+      "id": 53,
+      "code": "SM-58",
+      "width": "8m",
+      "length": "15m",
+      "watherDepth": "40m",
+      "type": "wet",
+      "price": "600",
+      "condition": "repair"
+    },
+    {
+      "id": 54,
+      "code": "SM-60",
+      "width": "8m",
+      "length": "15m",
+      "watherDepth": "40m",
+      "type": "wet",
+      "price": "600",
+      "condition": "taken"
+    },
+    {
+      "id": 55,
+      "code": "SM-61",
+      "width": "8m",
+      "length": "15m",
+      "watherDepth": "40m",
+      "type": "wet",
+      "price": "600",
+      "condition": "taken"
+    },
+    {
+      "id": 56,
+      "code": "SM-62",
+      "width": "8m",
+      "length": "15m",
+      "watherDepth": "40m",
+      "type": "wet",
+      "price": "600",
+      "condition": "taken"
+    },
+    {
+      "id": 57,
+      "code": "SM-63",
+      "width": "8m",
+      "length": "15m",
+      "watherDepth": "40m",
+      "type": "wet",
+      "price": "600",
+      "condition": "taken"
+    },
+    {
+      "id": 58,
+      "code": "SM-64",
+      "width": "8m",
+      "length": "15m",
+      "watherDepth": "40m",
+      "type": "wet",
+      "price": "600",
+      "condition": "taken"
+    },
+    {
+      "id": 59,
+      "code": "SM-65",
+      "width": "8m",
+      "length": "15m",
+      "watherDepth": "40m",
+      "type": "wet",
+      "price": "600",
+      "condition": "taken"
+    },
+    {
+      "id": 60,
+      "code": "SM-66",
+      "width": "8m",
+      "length": "15m",
+      "watherDepth": "40m",
+      "type": "wet",
+      "price": "600",
+      "condition": "taken"
+    },
+    {
+      "id": 61,
+      "code": "SM-67",
+      "width": "8m",
+      "length": "15m",
+      "watherDepth": "40m",
+      "type": "wet",
+      "price": "600",
+      "condition": "taken"
+    },
+    {
+      "id": 62,
+      "code": "SM-68",
+      "width": "8m",
+      "length": "15m",
+      "watherDepth": "40m",
+      "type": "wet",
+      "price": "600",
+      "condition": "avalible"
+    },
+    {
+      "id": 63,
+      "code": "hjhjhjhjhj",
+      "width": "",
+      "length": "",
+      "watherDepth": "",
+      "type": "",
+      "price": "",
+      "condition": ""
+    },
+    {
+      "id": 64,
+      "code": "test12345",
+      "width": "",
+      "length": "",
+      "watherDepth": "",
+      "type": "",
+      "price": "",
+      "condition": ""
+    },
+    {
+      "id": 65,
+      "code": "test1234",
+      "width": "11m",
+      "length": "11m",
+      "watherDepth": "111m",
+      "type": "wet",
+      "price": "3333",
+      "condition": "avalible",
+      "client": "",
+      "position": {
+        "lat": 45.547287,
+        "lng": 13.723947
+      }
+    },
+    {
+      "id": 66,
+      "code": "zadnjitest",
+      "width": "",
+      "length": "",
+      "watherDepth": "",
+      "type": "",
+      "price": "",
+      "condition": "",
+      "client": "",
+      "position": {
+        "lat": 45.54764,
+        "lng": 13.723893
+      }
+    }
+  ],
+  "forum": [
+    {
+      "id": 1,
+      "topic": "General",
+      "color": "info",
+      "posts": [
+        {
+          "id": 1,
+          "topicTitle": "Where do you fish?",
+          "topicBody": "Hello guys. Can anyone recomend me a good spot for fishing? Thank you in advance.",
+          "topicOwner": "ljevnikar",
+          "topicComments": [
+            {
+              "commentOwner": "tomo2345",
+              "commentBody": "I can't say for sure. It depends. But my prefered spots are in Simonov zaliv."
+            },
+            {
+              "commentOwner": "colwn222",
+              "commentBody": "I don't fish here."
+            },
+            {
+              "commentOwner": "j.novak",
+              "commentBody": "I agree with tomo2345"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "topicTitle": "Where do you fish?",
+          "topicBody": "Hello guys. Can anyone recomend me a good spot for fishing? Thank you in advance.",
+          "topicOwner": "ljevnikar",
+          "topicComments": [
+            {
+              "commentOwner": "tomo2345",
+              "commentBody": "I can't say for sure. It depends. But my prefered spots are in Simonov zaliv."
+            },
+            {
+              "commentOwner": "colwn222",
+              "commentBody": "I don't fish here."
+            },
+            {
+              "commentOwner": "j.novak",
+              "commentBody": "I agree with tomo2345"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "topicTitle": "Where do you fish?",
+          "topicBody": "Hello guys. Can anyone recomend me a good spot for fishing? Thank you in advance.",
+          "topicOwner": "ljevnikar",
+          "topicComments": [
+            {
+              "commentOwner": "tomo2345",
+              "commentBody": "I can't say for sure. It depends. But my prefered spots are in Simonov zaliv."
+            },
+            {
+              "commentOwner": "colwn222",
+              "commentBody": "I don't fish here."
+            },
+            {
+              "commentOwner": "j.novak",
+              "commentBody": "I agree with tomo2345"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "general": [
+    {
+      "id": 1,
+      "topicTitle": "Where do you fish?",
+      "topicBody": "Hello guys. Can anyone recomend me a good spot for fishing? Thank you in advance.",
+      "topicOwner": "ljevnikar",
+      "topicComments": [
+        {
+          "commentOwner": "tomo2345",
+          "commentBody": "I can't say for sure. It depends. But my prefered spots are in Simonov zaliv."
+        },
+        {
+          "commentOwner": "colwn222",
+          "commentBody": "I don't fish here."
+        },
+        {
+          "commentOwner": "j.novak",
+          "commentBody": "I agree with tomo2345"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "topicTitle": "Favourite boat brand?",
+      "topicBody": "What it said in the question",
+      "topicOwner": "ljevnikar",
+      "topicComments": [
+        {
+          "commentOwner": "j.novak",
+          "commentBody": "Elan"
+        }
+      ]
+    },
+    {
+      "topicTitle": "Coffe friday morning?",
+      "topicBody": "I'm free at friday. Anyone interested?",
+      "topicOwner": "ljevnikar1",
+      "topicComments": [
+        {
+          "commentOwner": "ljevnikar",
+          "commentBody": "dsadsadassa"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "topicTitle": "aa",
+      "topicBody": "aa",
+      "topicOwner": "ljevnikar1",
+      "topicComments": [],
+      "id": 5
+    },
+    {
+      "topicTitle": "How are you today?",
+      "topicBody": "I'm fine",
+      "topicOwner": "ljevnikar",
+      "topicComments": [
+        {
+          "commentOwner": "ljevnikar1",
+          "commentBody": "me too"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "topicTitle": "I need new rope!!!!",
+      "topicBody": "My current rope in torn!",
+      "topicOwner": "ljevnikar",
+      "topicComments": [],
+      "id": 7
+    }
+  ],
+  "random": [
+    {
+      "id": 1,
+      "topicTitle": "Favourite boat brand?",
+      "topicBody": "What it said in the question",
+      "topicOwner": "ljevnikar",
+      "topicComments": [
+        {
+          "commentOwner": "j.novak",
+          "commentBody": "Elan"
+        }
+      ]
+    }
+  ],
+  "weather": [
+    {
+      "id": 1,
+      "topicTitle": "Favourite boat brand?",
+      "topicBody": "What it said in the question",
+      "topicOwner": "ljevnikar",
+      "topicComments": [
+        {
+          "commentOwner": "j.novak",
+          "commentBody": "Elan"
+        }
+      ]
+    }
+  ],
+  "suggestions": [
+    {
+      "id": 1,
+      "topicTitle": "Favourite boat brand?",
+      "topicBody": "What it said in the question",
+      "topicOwner": "ljevnikar",
+      "topicComments": [
+        {
+          "commentOwner": "j.novak",
+          "commentBody": "Elan"
+        }
+      ]
+    }
+  ],
+  "problems": [
+    {
+      "id": 1,
+      "topicTitle": "Favourite boat brand?",
+      "topicBody": "What it said in the question",
+      "topicOwner": "ljevnikar",
+      "topicComments": [
+        {
+          "commentOwner": "j.novak",
+          "commentBody": "Elan"
+        },
+        {
+          "commentOwner": "ljevnikar",
+          "commentBody": "Elan is bad"
+        }
+      ]
+    },
+    {
+      "topicTitle": "I NEED NEW ROPE!",
+      "topicBody": "My old ropes are torn!",
+      "topicOwner": "ljevnikar",
+      "topicComments": [],
+      "id": 2
+    }
+  ]
+}
