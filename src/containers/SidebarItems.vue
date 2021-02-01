@@ -73,7 +73,6 @@ export default {
         Auth.currentSession()
             .then(data => {
                 this.userGroup = data.idToken.payload['cognito:groups'] ? data.idToken.payload['cognito:groups'][0] : 'USER'
-                console.log(this.userGroup)
             })
     }
 }

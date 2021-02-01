@@ -202,8 +202,6 @@ export default {
   },
   methods: {
     saveMooring() {
-      console.log(this.mooring)
-      console.log(this.editUser)
       this.mooring.position.lat = parseFloat(this.mooring.position.lat)
       this.mooring.position.lng = parseFloat(this.mooring.position.lng)
       if (this.editUser) {
@@ -212,7 +210,6 @@ export default {
         url: "http://localhost:3000/moorings/"+this.mooring.id,
         data: this.mooring
         }).then(r => {
-          console.log("aaa", r)
           this.$router.push({name: 'Moorings'})
         }) 
       } 
@@ -222,7 +219,6 @@ export default {
           url: "http://localhost:3000/moorings",
           data: this.mooring
         }).then(r => {
-          console.log("aaa", r)
           this.$router.push({name: 'Moorings'})
         })
       }

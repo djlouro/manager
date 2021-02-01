@@ -94,7 +94,6 @@ export default {
       signIn() {
           Auth.signIn(this.username, this.password)
           .then(data => {
-              console.log(data)
               if (data.challengeName === "NEW_PASSWORD_REQUIRED") {
                   this.user = data
                   this.completeNewPassword = true

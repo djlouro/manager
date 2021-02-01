@@ -113,7 +113,6 @@ export default {
             })
           .then(data => {
               this.confirm = true
-              console.log(data)
           })
           .catch(err => {
               this.errorMsg = err
@@ -122,7 +121,6 @@ export default {
       confirmRegister() {
         Auth.confirmSignUp(this.username, this.code)
         .then(data => {
-              console.log(data)
               this.$router.push({name: 'Login'})
           })
           .catch(err => {

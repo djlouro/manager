@@ -83,18 +83,14 @@ const routes = [{
   }
 
   router.beforeEach(async(to, from, next) => {
-      console.log('HEREEEEE')
       Auth.currentSession()
       .then(data => {
-        console.log(data)
         let username = data.idToken.payload['cognito:username']
         let group = data.idToken.payload['cognito:groups'] ?
         data.idToken.payload['cognito:groups'][0] : 'USER'
-        console.log(username)
         if (!from.name) {
           store.commit('setGroup', group)
           store.commit('setUsername', username)
-          console.log('NOT')
           if (to.name !== 'Dashboard') {
             router.push({name: 'Dashboard'}).catch(() => {})
           }
@@ -102,7 +98,6 @@ const routes = [{
         next()
       })
       .catch(() => {
-        console.log("CATCH")
         if (to.name !== 'Login' && to.name !== 'ForgotPassword' && to.name !== 'Register') {
           router.push({name: 'Login'}).catch(() => {})
           return;

@@ -190,7 +190,6 @@ export default {
           method: 'GET',
           url: 'http://localhost:3000/moorings'
     }).then(r => {
-      console.log(r)
         this.mooringList = r.data
         this.setData()
       })
@@ -200,7 +199,6 @@ export default {
           method: 'GET',
           url: 'http://localhost:3000/moorings?condition=repair'
     }).then(r => {
-      console.log(r)
         this.repairMoorings = r.data
       })
     }

@@ -104,7 +104,6 @@ export default {
           method: 'GET',
           url: 'http://localhost:3000/moorings'
     }).then(r => {
-      console.log(r)
         this.mooringList = r.data
       })
     }

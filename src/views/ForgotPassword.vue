@@ -101,7 +101,6 @@ export default {
       resetPassword() {
           Auth.forgotPasswordSubmit(this.username, this.code, this.newPassword)
           .then(() => {
-              alert("OK")
               this.$router.push({name: 'Login'})
           })
       },

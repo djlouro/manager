@@ -167,18 +167,14 @@ export default {
           method: 'GET',
           url: 'http://localhost:3000/'+this.currentCategory
     }).then(r => {
-      console.log(r)
         this.forumData = r.data
         this.questions=r.data
         //this.setQuestions()
       })
     },
     setQuestions(topic) {
-      console.log(this)
       for (let i = 0; i < this.forumData.length; i++) {
-        console.log(this.forumData[i].topic)
         if (this.forumData[i].topic === topic) {
-          console.log(this.forumData[i].posts)
           this.questions = this.forumData[i].posts
         }
       }
