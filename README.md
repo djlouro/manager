@@ -19,9 +19,10 @@ npm run build
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 # JSON Server
-'''
+```
 npm install -g json-server
-
+```
 ## Run JSON Server
-'''
+```
 json-server --no-cors --watch ./db.json
+```
